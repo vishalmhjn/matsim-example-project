@@ -21,19 +21,22 @@
 		<dependency>
 			<groupId>org.matsim</groupId>
 			<artifactId>matsim</artifactId>
-			<version>0.9.0</version>
+<!-- 			<version>0.9.0</version>
+ -->			<version>0.10.0-SNAPSHOT</version>
 		</dependency>
 
 		<!-- Include some MATSim extensions -->
 		<dependency>
 			<groupId>org.matsim.contrib</groupId>
 			<artifactId>minibus</artifactId>
-			<version>0.9.0</version>
+<!-- 			<version>0.9.0</version>
+ -->			<version>0.10.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.matsim.contrib</groupId>
 			<artifactId>otfvis</artifactId>
-			<version>0.9.0</version>
+<!-- 			<version>0.9.0</version>
+ -->			<version>0.10.0-SNAPSHOT</version>
 		</dependency>
 
 		<!-- Include the JUnit testing library -->
