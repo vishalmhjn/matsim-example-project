@@ -46,6 +46,16 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.matsim</groupId>
+			<artifactId>matsim-examples</artifactId>
+			<version>0.10.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim</groupId>
+			<artifactId>matsim-tutorial</artifactId>
+			<version>0.10.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
