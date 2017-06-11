@@ -15,7 +15,11 @@
 			<id>matsim</id>
 			<url>https://dl.bintray.com/matsim/matsim</url>
 		</repository>
-	</repositories>
+ 		<repository>
+			<id>ojo-snapshots</id>
+			<url>http://oss.jfrog.org/libs-snapshot</url>
+		</repository>	
+		</repositories>
 
 	<dependencies>
 		<dependency>
