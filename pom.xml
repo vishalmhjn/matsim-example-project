@@ -25,7 +25,7 @@
 			<id>ojo-snapshots</id>
 			<url>http://oss.jfrog.org/libs-snapshot</url>
 		</repository>	
-		</repositories>
+	</repositories>	
 
 	<dependencies>
 		<dependency>

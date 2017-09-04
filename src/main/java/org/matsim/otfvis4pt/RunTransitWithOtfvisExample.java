@@ -20,6 +20,9 @@
 
 package org.matsim.otfvis4pt;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.matsim.api.core.v01.Scenario;
 import org.matsim.contrib.otfvis.OTFVisLiveModule;
 import org.matsim.core.config.Config;
@@ -35,7 +38,18 @@ public class RunTransitWithOtfvisExample {
 
 	public static void main(final String[] args) {
 		
-		Config config = ConfigUtils.loadConfig(args[0], new OTFVisConfigGroup() ) ;
+		Config config = null ;
+		if ( args != null && args.length >= 1 ) {
+			config = ConfigUtils.loadConfig(args[0], new OTFVisConfigGroup() ) ;
+		} else {
+			final String filename = "https://svn.vsp.tu-berlin.de/repos/public-svn/matsim/scenarios/countries/de/cottbus/cottbus-tutorial-2016/config01.xml";
+			try {
+				URL url = new URL(filename) ;
+				config = ConfigUtils.loadConfig(url, new OTFVisConfigGroup() ) ;
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
+			}
+		}
 		
 		config.controler().setOverwriteFileSetting( OverwriteFileSetting.deleteDirectoryIfExists ) ;
 
